@@ -1,6 +1,8 @@
 let count=0;
-document.getElementById("incrementBtn").addEventListener("click",function(){
+let incrementBtn = document.getElementById("incrementBtn");
+let counter = document.getElementById("counter");
+incrementBtn.addEventListener("click",function(){
 	alert(count);
 	count++;
-	document.getElementById("counter").textContent=count;
+	counter.textContent=count;
 })
